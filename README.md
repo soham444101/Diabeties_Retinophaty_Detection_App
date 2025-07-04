@@ -20,7 +20,7 @@ This React Native mobile application is part of a larger AI-powered system for e
 ##  Technologies Used
 
 - **Frontend (Mobile):** React Native, Axios,Async-Storage  
-- **Backend (not in this repo):** Python, Flask, TensorFlow, Keras  
+- **Backend :** Python, Flask, TensorFlow, Keras  
 - **Tools & Libraries:**  
   - UI: React Navigation, Bottom Sheet, SVG
   - Image Processing: OpenCV (server-side), CLAHE
