@@ -1,0 +1,6 @@
+flask
+flask-wtf
+flask-pymongo
+flask-login
+flask-bcrypt
+python-dotenv

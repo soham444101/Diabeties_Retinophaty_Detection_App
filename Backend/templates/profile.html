@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-3">
+                <div class="box">
+                    <div class="media">
+                        <div class="media-content">
+                            <p class="title is-4">{{ user.name }}</p>
+                            <p class="subtitle is-6">{{ user.email }}</p>
+                            <p>Age: {{ user.age }}</p>
+                            <p>Gender: {{ user.gender }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="column">
+                <div class="box">
+                    <h2 class="title is-4">Analysis History</h2>
+                    {% for analysis in user.analysis_history %}
+                    <div class="card mb-4">
+                        <div class="card-content">
+                            <div class="columns">
+                                <div class="column is-2">
+                                    <span class="tag is-primary">{{ analysis.result }}</span>
+                                </div>
+                                <div class="column">
+                                    <p>Date: {{ analysis.date.strftime('%Y-%m-%d %H:%M') }}</p>
+                                    <p>Confidence: {{ "%.2f"|format(analysis.confidence * 100) }}%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

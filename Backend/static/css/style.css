@@ -1,0 +1,88 @@
+/* Custom overrides */
+:root {
+    --primary: #485fc7;
+    --primary-hover: #3a4ca8;
+    --gradient: linear-gradient(135deg, #485fc7 0%, #3a4ca8 100%);
+}
+
+.hero {
+    background: var(--gradient);
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.analysis-card {
+    border-left: 4px solid var(--primary);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+.severity-scale {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.severity-level {
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.severity-level:hover {
+    transform: scale(1.05);
+}
+
+.level-0 { background: #4CAF50; }
+.level-1 { background: #FFC107; }
+.level-2 { background: #FF9800; }
+.level-3 { background: #F44336; }
+.level-4 { background: #9C27B0; }
+
+.upload-box {
+    border: 2px dashed var(--primary);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.upload-box:hover {
+    background-color: rgba(72, 95, 199, 0.05);
+    border-color: var(--primary-hover);
+}
+
+.result-badge {
+    font-size: 1.25rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+}
+
+/* Animation for flash messages */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.notification {
+    animation: slideIn 0.3s ease-out;
+    margin: 1rem 0;
+}

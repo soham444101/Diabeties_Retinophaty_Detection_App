@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    {% include 'navbar.html' %}
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Welcome to the Home Page</h1>
+            <div class="buttons">
+                <!-- Change these links -->
+                <a href="{{ url_for('auth.login') }}" class="button is-primary">Login</a>
+                <a href="{{ url_for('auth.signup') }}" class="button is-info">Sign Up</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
