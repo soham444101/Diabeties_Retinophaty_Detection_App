@@ -31,13 +31,17 @@ This React Native mobile application is part of a larger AI-powered system for e
 ---
 # Install Dependency
 
-git clone https://github.com/your-username/dr-mobile-app.git
+git clone https://github.com/your-username/dr-mobile-app.git]
+
 cd dr-mobile-app
+
 npm install
 
 # Run the App
 npm start         # Start Metro bundler
+
 npm run android   # Run on Android emulator/device
+
 npm run ios    
 
 
@@ -48,4 +52,5 @@ DR Detection Backend (Flask + TensorFlow)
 Feel free to reach out for collaboration or questions:
 
  Email: sohamaswar@gmail.com
+ 
  GitHub: @soham444101
