@@ -13,19 +13,16 @@ This React Native mobile application is part of a larger AI-powered system for e
 - 🤖 Real-time DR stage prediction (0–4)
 - 🔐 Secure login using JWT
 - 📊 Diagnostic dashboard for result visualization
-- 🌗 Theme switching support
-- 🔀 Page navigation & animated carousels
-- 📥 Image download capability
 - 📱 Android & iOS support
 
 ---
 
 ## 🧠 Technologies Used
 
-- **Frontend (Mobile):** React Native, Expo, Axios  
+- **Frontend (Mobile):** React Native, Axios,Async-Storage  
 - **Backend (not in this repo):** Python, Flask, TensorFlow, Keras  
 - **Tools & Libraries:**  
-  - UI: React Navigation, Bottom Sheet, Carousel, SVG
+  - UI: React Navigation, Bottom Sheet, SVG
   - Image Processing: OpenCV (server-side), CLAHE
   - Auth: JWT
   - Styling: LinearGradient, Custom Fonts
